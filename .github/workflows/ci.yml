@@ -23,8 +23,3 @@ jobs:
           file: ./Dockerfile.test
           tags: angular-testing:latest
           push: false
-
-      - name: Run Tests
-        uses: addnab/docker-run-action@v3
-        with:
-          image: angular-testing:latest
