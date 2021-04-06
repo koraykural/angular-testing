@@ -1,0 +1,10 @@
+FROM node:15-alpine
+RUN apk add chromium
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+ENV CHROME_BIN=/usr/bin/chromium-browser
+COPY package.json /usr/src/app/
+RUN npm install
+EXPOSE 4200
+COPY . /usr/src/app
+CMD ["npm", "run", "test:headless"]

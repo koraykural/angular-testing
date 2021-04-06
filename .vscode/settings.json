@@ -1,0 +1,12 @@
+{
+  "editor.rulers": [
+    100
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/build": true,
+    "**/coverage": true
+  },
+  "editor.formatOnSave": true
+}
